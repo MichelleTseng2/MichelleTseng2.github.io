@@ -56,6 +56,9 @@ margin-left: 130px;
 margin-top: 10px;
 width:45%;
 }
+.body1:hover{
+opacity: 0.7;
+}
 div.body2{
 position:relative;
 top: 610px;
@@ -67,6 +70,9 @@ padding-right: 20px;
 margin-left: 130px;
 margin-top: 20px;
 width:82%;
+}
+.body1:hover{
+opacity: 0.7;
 }
 div.bg{
 color:#FF3333;
@@ -162,6 +168,9 @@ width:34%;
 height:1860px;
 left: 90px;
 top: 925px;
+}
+.Con:hover{
+opacity: 0.7;
 }
 img.pic{
 width:40px;
