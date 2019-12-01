@@ -1,0 +1,134 @@
+body{
+font-weight: bold;
+font-family: "微軟正黑體";
+background-color:#007799 ;
+}
+div.bg{
+background:#CCDDFF;
+width:90%;
+height: 1550px;
+margin: 20px 80px 20px 70px;
+}
+img.pic{
+padding-left: 50px;
+padding-top: 50px;
+width:300px;
+float: left;
+}
+img.pic:hover{
+opacity: 0.7;
+}
+div.me{
+color:#00AAAA;
+font-family:微軟正黑體;
+font-weight:bold;
+font-size: 24px;
+float: right;
+padding-right:10%;
+}
+img.com{
+width:70px;
+height:60px;
+float:left;
+padding-right: 20px;
+padding-top: 10px;
+}
+button.button{
+border: 2px solid #00AA88;
+color:#00AA88;
+font-family: 微軟正黑體;
+padding: 7px;
+margin-top: 10px;
+font-size: 22px;
+height: 50px;
+background-color: #CCEEFF;
+font-weight: bold;
+}
+button:hover {
+color: white;
+font-family: 微軟正黑體;
+background-color:#00AA88;
+}
+div.left{
+float: left;
+width:80%;
+border:5px #008866 dashed;
+margin-top: 5px;
+margin-left: -49%;
+}
+div.left1{
+float: left;
+width:80%;;
+margin-top: 750px;
+margin-left: -80%;
+}
+div.word{
+color:#00AAAA;
+font-family:微軟正黑體;
+font-weight:bold;
+font-size: 22px;
+padding-bottom: 30px;
+}
+* {box-sizing: border-box}
+.container {
+width: 100%;
+background-color: #ddd;
+}
+.skills {
+text-align: right;
+padding-top: 10px;
+padding-bottom: 10px;
+color: white;
+}
+.html {
+animation-name: skill70;
+animation-duration: 2s;
+width: 70%;
+background-color: #008866;}
+@keyframes skill70 {
+0% {width: 0%}
+100% {width: 70%}
+}
+.css {
+animation-name: skill80;
+animation-duration: 2s;
+width: 80%; 
+background-color: #008866;}
+@keyframes skill80 {
+0% {width: 0%}
+100% {width: 80%}
+}
+.java {
+animation-name: skill65;
+animation-duration: 2s;
+width: 65%; 
+background-color: #008866;}
+@keyframes skill65 {
+0% {width: 0%}
+100% {width: 65%}
+}
+.C {
+animation-name: skill60;
+animation-duration: 2s;
+width: 60%; 
+background-color: #008866;}
+@keyframes skill60 {
+0% {width: 0%}
+100% {width: 60%}
+}
+.video {
+animation-name: skill90;
+animation-duration: 2s;
+width: 90%;
+background-color: #008866;}
+@keyframes skill90 {
+0% {width: 0%}
+100% {width: 90%}
+}
+div.right{
+float: right;
+width:80%;
+margin-top: 10px;
+margin-left: 25px;
+margin-right: -110px;
+}
