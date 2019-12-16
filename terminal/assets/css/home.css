@@ -1,0 +1,230 @@
+body{
+	background-color:#FFFFBB;
+}
+img.logo{
+	width:310px;
+	height:130px;
+	float: left;
+	background-color:#FFDDAA;
+	animation-name: oxxo;
+	animation-duration:4s;
+}
+
+@keyframes oxxo {
+	from {
+		margin-left: 2000px;
+	}
+	to {
+		margin-left: 0px;
+	}
+}
+img.home{
+	width:15%;
+	margin-left: -200px;
+	margin-right:870px;
+	margin-top:-250px;
+	animation-name: oxx;
+	animation-duration:4s;
+}
+@keyframes oxx {
+	from {
+		margin-right: -3500px;
+	}
+	to {
+		margin-left: 0px;
+	}
+}
+img.home:hover {
+	background-color:	#FFBB66;
+}
+img.car{
+	width:80%;
+	margin-left: -200px;
+	margin-right:-200px;
+	margin-top:-10px;
+}
+.navi{
+	text-align:center;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height:130px;
+	overflow: hidden;
+	background-color:#FFDDAA;
+}
+nav li {
+	float: right;
+}
+nav ul li a {
+	display: block;
+	color:#FF7744;
+	text-align: center;
+	font:36px 微軟正黑體;
+	font-weight:bold;
+	padding: 40px 40px;
+	text-decoration: none;
+}
+nav li a:hover {
+	background-color:	#FFBB66;
+}
+button {
+  background-color:#FFDDAA;
+  color: #FF7744;
+  font:36px 微軟正黑體;
+  padding: 40px 40px;
+  font-weight:bold;
+  margin:  0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color:	#FFBB66;
+}
+img.mySlides{
+	display:none;
+	width: 1550px;
+	height:800px;
+	margin-left: -270px;
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+div.body1{
+	position:relative;
+	padding-top: 1px;
+	padding-bottom: 5px;
+	margin-left: 100px;
+	margin-top: 20px;
+	width:45%;
+}
+div.word{
+	color:#FF3333;
+	text-align: center;
+	font-weight:bold;
+	font:60px 微軟正黑體;
+}
+img.tick{
+	width:870px;
+	float: left;
+	cursor: pointer;
+}
+.tick:hover{
+	opacity: 0.7;
+}
+.tick:active{
+	-webkit-filter:blur(5px);
+	-webkit-transform: translate3d(59px,0,0) rotate3d(0,1,0,-55deg);
+}
+div.boardcontent{
+	width:40%;
+	height: 100%;
+	float: right;
+	margin-top: -700px;
+	margin-right: 60px;
+	border:5px #FF8888 dashed;
+}
+h1.confirm{
+	text-align: center;
+	font-weight:bold;
+	font:60px 微軟正黑體;
+	color:#FF3333;
+}
+div.boardimformation{
+	margin-top: 2%;
+	text-align: left;
+}
+div.word2{
+	font:30px 微軟正黑體;
+	font-weight: bold;
+	color:#FF3333;
+	text-align: center;
+
+}
+.board{
+	padding: 20px 0px;
+	margin: 20px;
+}
+input.mem
+{
+	width: 150px;
+	height: 70px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 30px;
+	color: #FF3333;
+	background-color:#FFC8B4;
+	font-weight: bold;
+	margin-top: 2%;
+}
+input.mem:hover
+{
+	color: #FFC8B4;
+	background-color:#FF3333;
+}
+.footer {
+	position:absolute;
+	margin-top: 1200px;
+	width:100%;
+	height:185px;
+	background:#FF7744;
+	font-family: "微軟正黑體";
+}
+.footer p {
+	text-align:center;
+	font-size:32px;
+	color:#FFDDAA;
+	margin:0px;
+	padding:0px;
+	font-family: "微軟正黑體";
+}
+img.com1{
+	width:80px;
+	height:80px;
+	float:left;
+	margin-top: 1%;
+	margin-left: 40%;
+	margin-bottom: 500px;
+}
+.com1:hover{
+	opacity: 0.5;
+}
+img.com2{
+	width:80px;
+	height:80px;
+	float:left;
+	margin-top: 1%;
+	margin-left: 1%;
+	margin-bottom: 500px;
+}
+.com2:hover{
+	opacity: 0.5;
+}
+img.com3{
+	width:80px;
+	height:80px;
+	float:left;
+	margin-top: 1%;
+	margin-left: 1%;
+	margin-bottom: 500px;
+}
+.com3:hover{
+	opacity: 0.5;
+}
+img.com4{
+	width:80px;
+	height:80px;
+	float:left;
+	margin-top: 1%;
+	margin-left: 1%;
+	margin-bottom: 500px;
+}
+.com4:hover{
+	opacity: 0.5;
+}
+.s{
+	margin-top:15px;
+}

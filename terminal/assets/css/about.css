@@ -1,0 +1,95 @@
+img.home{
+	width:15%;
+	margin-left: -200px;
+	margin-right:870px;
+	margin-top:-250px;
+	margin-bottom: 50px;
+	animation-name: oxx;
+	animation-duration:4s;
+}
+@keyframes oxx {
+	from {
+		margin-right: -3500px;
+	}
+	to {
+		margin-left: 0px;
+	}
+}
+div.body1{
+	width: 90%;
+	margin-left: 170px;
+	
+}
+.text2{
+	text-align: center;
+	font-size:56px ;
+	font-family: 微軟正黑體 ;
+	color: #FF0000 ;
+	font-size: bold;
+	background-color: #FFCCCC; 
+	border:10px #FF0088 groove;
+	width: 300px;
+}
+.text2:hover{
+color: #FFCCCC;
+background-color: #FF0000; 
+border:10px #FF7744 ridge;
+}
+.text1{
+	font-size:24px ;
+	font-family: 微軟正黑體 ;
+	color: #FF8888 ;
+	font-size: bold; 
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 90%;
+  width: 80%;
+  padding-left: 70px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FF8800;
+}
+
+.container:hover .overlay {
+  opacity: 0.9;
+}
+.image {
+  display: block;
+  width: 80%;
+}
+.text {
+  color:#FFFFBB;
+  font-size: 45px;
+  font-family: 微軟正黑體;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.footer {
+	position:absolute;
+	margin-top: 250px;
+	width:100%;
+	height:185px;
+	background:#FF7744;
+}
+.na {
+	list-style-type: none;
+	margin-top:-8px;
+	margin-left:-10px; 
+	margin-right:-10px; 
+	padding: 0;
+	height:130px;
+	overflow: hidden;
+	background-color:#FFDDAA;
+}

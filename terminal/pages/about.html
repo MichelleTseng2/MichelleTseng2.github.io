@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>make a dream</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+			@import url("../assets/css/home.css");
+			@import url("../assets/css/about.css");
+			@import url("../assets/css/sign.css");
+			@import url("../assets/css/add.css");
+		</style>
+	</head>
+	<body>
+		<nav class="navi">
+			<img src="../assets/img/logo.png" alt="logo" class="logo">
+			<ul>
+				<li><a href="car.html"><img class="car" src="../assets/img/cart.png"></a></li>
+				<li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">sign in/sign up</button></li>
+				<li><a href="QA.html">Q&A</a></li>
+				<li><a href="about.html">about us</a></li>
+				<li><a href="commodity.html">commodity</a></li>
+				<li><a href="../index.html"><img class="home" src="../assets/img/home.png"></a></li>
+			</ul>
+		</nav>
+		<article>
+				<div class="body1">
+			<h1 class="text2">about us</h1>
+			<p class="text1">你是想認識，還是不想了解？</p>
+			<table>
+			<tr> 
+				<td><div class="container">
+				<img src="../assets/img/we1.jpg" alt="Avatar" class="image" style="border: 12px #5599FF groove; margin-bottom: 70px;">
+				<div class="overlay">
+					<div class="text">資管二乙 康宸源 <br>綽號：康康<br>個性：隨和<br>興趣：打球<br>分工：後端-點子構想及統整 </div>
+				</div>
+			</div></td>
+				<td><div class="container">
+				<img src="../assets/img/we3.jpg" alt="Avatar" class="image" style="border:12px #FF8888	 groove;margin-bottom: 70px;">
+				<div class="overlay">
+					<div class="text">資管二甲 古珮樺 <br>綽號：阿古<br>個性：樂觀、隨和 <br>興趣：二胡、烏克麗麗、嘗試新鮮的事<br>分工：前端-商品、Q&A、網頁整合/修改 </div>
+				</div>
+			</div></td>
+			</tr>
+			<tr>
+				<td><div class="container">
+				<img src="../assets/img/we2.jpg" alt="Avatar" class="image" style="border: 12px #5599FF groove;margin-bottom: 70px;">
+				<div class="overlay">
+					<div class="text">資管二乙 黃薪誠 <br>綽號：老爹<br>個性：幽默 <br>興趣：打球、打電動 <br>分工：後端-程式</div>
+				</div>
+			</div></td>
+				<td><div class="container">
+				<img src="../assets/img/we4.jpg" alt="Avatar" class="image" style="border:12px #FF8888	 groove;margin-bottom: 70px;">
+				<div class="overlay">
+					<div class="text">
+						資管二甲 曾雅珊 <br>
+						綽號：珊珊<br>
+						個性：活潑開朗外向 <br>
+						興趣：聊天、看劇 <br>
+						分工：前端-home、about us、會員/管理員專區 
+					</div>
+				</div>
+			</div></td>
+			</tr>
+		</table>			
+		</div>
+		</article>
+		<div id="id01" class="modal">
+			
+			<form class="modal-content animate" action="/action_page.php" method="post">
+				<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				</div>
+				<div class="container">
+					<label for="uname" class="te"><b>帳號：</b></label>
+					<input type="text" placeholder="Enter Username" name="uname" required>
+					<label for="psw"  class="te"><b>密碼：</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required>	
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+					<p></p>
+					<center>			
+						<button type="submit" class="add">
+							會員登入
+						</button>
+						<button type="submit" class="add">
+							<a href="manager.html">管理員登入</a>
+						</button>
+					</center>
+				</div>
+				<div class="container">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">取消</button>
+					<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"class="cancelbtn" >註冊</button>
+					<span class="psw">Forgot <a href="#" class="color">password?</a></span>
+				</div>
+			</form>
+		</div>
+		<script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		if (event.target == modal) {
+		modal.style.display = "none";
+		}
+		}
+		</script>
+		
+		<div id="id02" class="modal1">
+			<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<form class="modal-content1" action="/action_page.php">
+				<div class="container1">
+					<h1 class="te">會員註冊</h1>
+					<hr>
+					<label for="name" class="te"><b>姓名</b></label>
+					<input type="text" placeholder="Enter Name" name="name" required>
+					<label for="account" class="te"><b>帳號</b></label>
+					<input type="text" placeholder="Enter account" name="account" required>
+					<label for="psw" class="te"><b>密碼</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required>
+					<label for="psw-repeat"class="te"> <b>再次輸入密碼</b></label>
+					<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+					<label for="email" class="te"><b>Email</b></label>
+					<input type="text" placeholder="Enter Email" name="email" required>
+					<label>
+						<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+					</label>
+					
+					<div class="clearfix1">
+						<button type="submit" class="signupbtn1">註冊</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script>
+		// Get the modal
+		var modal = document.getElementById('id02');
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		if (event.target == modal) {
+		modal.style.display = "none";
+		}
+		}
+		</script>
+		<footer>
+			<div class="footer" >
+				<p><strong>聯絡我們</strong></p>
+				<div class="ig">
+					<p>
+						<div>
+							<a href="https://www.instagram.com/tseng.1018/?hl=zh-tw" target="_blank">
+								<img src="../assets/img/3.jpg" class="com1">
+							</a>
+						</div>
+					</p>
+					<p>
+						<div>
+							<a href="https://instagram.com/z20090918z?igshid=zericnj3doc0" target="_blank">
+								<img src="../assets/img/2.jpg" class="com2">
+							</a>
+						</div>
+					</p>
+					<p>
+						<div>
+							<a href="https://instagram.com/cheng_1024?igshid=1oorejruc3uef" target="_blank">
+								<img src="../assets/img/1.jpg" class="com3">
+							</a>
+						</div>
+					</p>
+					<p>
+						<div>
+							<a href="https://instagram.com/2letters__?igshid=obcbmjubik5l" target="_blank">
+								<img src="../assets/img/4.jpg" class="com4">
+							</a>
+						</div>	
+					</p>		
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>		

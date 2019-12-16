@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>make a dream</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+			@import url("../assets/css/home.css");
+			@import url("../assets/css/commodity.css");
+			@import url("../assets/css/sign.css");
+			@import url("../assets/css/add.css");
+		</style>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			 // hides the slickbox as soon as the DOM is ready
+			 // (a little sooner than page load)
+			  $('#hiddenbox0').hide();
+
+			  // toggles the slickbox on clicking the noted link 
+			  $('a#jqtextcall0').click(function() {
+			    $('#hiddenbox0').slideToggle(400);
+			    return false;
+			  });
+			});
+		</script>
+	</head>
+	<body>
+		<nav class="navi">
+			<img src="../assets/img/logo.png" alt="logo" class="logo">
+			<ul>
+				<li><a href="car.html"><img class="car" src="../assets/img/cart.png"></a></li>
+				<li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">sign in/sign up</button></li>
+				<li><a href="QA.html">Q&A</a></li>
+				<li><a href="about.html">about us</a></li>
+				<li><a href="commodity.html">commodity</a></li>
+				<li><a href="../index.html"><img class="home" src="../assets/img/home.png"></a></li>
+			</ul>
+		</nav>
+		<article>
+			<table width="100%" style="table-layout:fixed">
+				<tr>
+					<td>
+						<div id="content">
+							<a id="jqtextcall0" href="#" title="點我觀看獎品">
+								<img src="../assets/img/gift.png" alt="gift" class="gift"><br>
+							</a>   	
+							<div id="hiddenbox0">
+								<p class="text1">
+									<a id="jqtextcall0" href="#" title="關閉">
+										<img src="../assets/img/close.png" alt="colse" class="clo">
+										<br>
+									</a> 
+									<p class="gp1">精 選</p>
+									<img src="../assets/img/gift21.jpg" class="gi">
+									<img src="../assets/img/gift22.jpg" class="gi">
+									<p class="gp2">普 通</p>
+									<img src="../assets/img/gift23.jpg" class="gi">
+									<img src="../assets/img/gift24.jpg" class="gi">
+									<img src="../assets/img/gift25.jpg" class="gi">
+								</p>	
+							</div> 
+						</div>
+						<center><img src="../assets/img/tick2.jpg" alt="tick" class="ti1"></center>
+						<p class="camount"> 剩 餘 數 量 679</p>
+						<a href="commodity.html"><img src="../assets/img/c1.png" title="回到上一頁" class="c1"></a>
+					</td>
+					<td>
+						<table width="100%" style="table-layout:fixed">
+							<tr>
+								<td>
+									<center class="csite">
+										<p class="cname">200元抽獎券</p>
+										<ul class="btn-numbox">
+								            <li><span class="number">數量</span></li>
+								            <li class="site0">
+								                <ul class="count">
+								                    <li><span id="num-jian" class="num-jian">-</span></li>
+								                    <li><input type="text" class="input-num" id="input-num" value="0" /></li>
+								                    <li><span id="num-jia" class="num-jia">+</span></li>
+								                </ul>
+								            </li>
+								            <li><span class="kucun">（庫存:679）</span></li>
+								　　　  </ul>
+										<div class="buy">
+					                        	立即購買
+					                    </div>
+					                    <div class="buy">
+					                        	加入購物車
+					                    </div>
+					                    <div class="rating">
+									        <input type="radio" id="star5" name="rating" value="5" hidden/>
+									        <label for="star5"></label>
+									        <input type="radio" id="star4" name="rating" value="4" hidden/>
+									        <label for="star4"></label>
+									        <input type="radio" id="star3" name="rating" value="3" hidden/>
+									        <label for="star3"></label>
+									        <input type="radio" id="star2" name="rating" value="2" hidden/>
+									        <label for="star2"></label>
+									        <input type="radio" id="star1" name="rating" value="1" hidden/>
+									        <label for="star1"></label>
+									    </div>
+				                    </center>
+								</td>
+								<td>
+									<p class="csite4">
+										獎品有藍芽喇叭、餐具組...等，若想知道更多的獎品資訊請點選禮物盒觀看
+									</p>
+									<p class="csite5">中獎後抽中的物品將於填完送貨資訊單後10天內抵達指定地點</p>
+									<p class="csite3">評論：
+										<a href="javascript: $('#comment').dialog({autoOpen: true, show:{effect:'Transfer', duration: 1000}, width: '600', height: '300', resizable: false,position: [885,490]});" class="comment0">點我觀看評論</a>
+										<div title="消 費 者 の 評 論" id="comment">
+										目前沒有任何評論呦！！<br> 
+										</div>
+									</p>
+									<textarea cols="60" rows="5" class="board csite1"></textarea><br>
+									<input type="submit" value="送出" class="buy csite2" />
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<script>
+			　 var num_jia = document.getElementById("num-jia");
+			        var num_jian = document.getElementById("num-jian");
+			        var input_num = document.getElementById("input-num");
+
+			        num_jia.onclick = function() {
+
+			            input_num.value = parseInt(input_num.value) + 1;
+			        }
+
+			        num_jian.onclick = function() {
+
+			            if(input_num.value <= 0) {
+			                input_num.value = 0;
+			            } else {
+
+			                input_num.value = parseInt(input_num.value) - 1;
+			            }
+
+			        }
+			</script>
+		</article>
+		<div id="id01" class="modal">
+			
+			<form class="modal-content animate" action="/action_page.php" method="post">
+				<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				</div>
+				<div class="container">
+					<label for="uname" class="te"><b>帳號：</b></label>
+					<input type="text" placeholder="Enter Username" name="uname" required>
+					<label for="psw"  class="te"><b>密碼：</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required>		
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+					<p></p><center>			
+						<button type="submit" class="add">
+							會員登入
+						</button>
+						<button type="submit" class="add">
+							<a href="manager.html">管理員登入</a>
+						</button>
+					</center>
+				</div>
+				<div class="container">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">取消</button>
+					<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"class="cancelbtn" >註冊</button>
+					<span class="psw">Forgot <a href="#" class="color">password?</a></span>
+				</div>
+			</form>
+		</div>
+		<script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		if (event.target == modal) {
+		modal.style.display = "none";
+		}
+		}
+		</script>
+		
+		<div id="id02" class="modal1">
+			<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<form class="modal-content1" action="/action_page.php">
+				<div class="container1">
+					<h1 class="te">會員註冊</h1>
+					<hr>
+					<label for="name" class="te"><b>姓名</b></label>
+					<input type="text" placeholder="Enter Name" name="name" required>
+					<label for="account" class="te"><b>帳號</b></label>
+					<input type="text" placeholder="Enter account" name="account" required>
+					<label for="psw" class="te"><b>密碼</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required>
+					<label for="psw-repeat"class="te"> <b>再次輸入密碼</b></label>
+					<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+					<label for="email" class="te"><b>Email</b></label>
+					<input type="text" placeholder="Enter Email" name="email" required>
+					<label>
+						<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+					</label>
+					
+					<div class="clearfix1">
+						<button type="submit" class="signupbtn1">註冊</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script>
+		// Get the modal
+		var modal = document.getElementById('id02');
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		if (event.target == modal) {
+		modal.style.display = "none";
+		}
+		}
+		</script>
+		<footer>
+			<div class="footera" >
+				<p><strong>聯絡我們</strong></p>
+				<div class="ig">
+					<p>
+						<div>
+							<a href="https://www.instagram.com/tseng.1018/?hl=zh-tw" target="_blank">
+								<img src="../assets/img/3.jpg" class="com1">
+							</a>
+						</div>
+					</p>
+					<p>
+						<div>
+							<a href="https://instagram.com/z20090918z?igshid=zericnj3doc0" target="_blank">
+								<img src="../assets/img/2.jpg" class="com2">
+							</a>
+						</div>
+					</p>
+					<p>
+						<div>
+							<a href="https://instagram.com/cheng_1024?igshid=1oorejruc3uef" target="_blank">
+								<img src="../assets/img/1.jpg" class="com3">
+							</a>
+						</div>
+					</p>
+					<p>
+						<div>
+							<a href="https://instagram.com/2letters__?igshid=obcbmjubik5l" target="_blank">
+								<img src="../assets/img/4.jpg" class="com4">
+							</a>
+						</div>	
+					</p>		
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>		

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>make a dream</title>
+		<style>
+					@import url("../assets/css/home.css");
+					@import url("../assets/css/sign.css");
+					@import url("../assets/css/add.css");
+					@import url("../assets/css/manager.css");
+					@import url("../assets/css/car.css");
+					<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+		</style>
+		<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+	</head>
+	<body>
+		<nav class="na">
+			<img src="../assets/img/logo.png" alt="logo" class="logo">
+			<ul>
+				<li><a href="car.html"><img class="car" src="../assets/img/cart.png"></a></li>
+				<li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">sign in/sign up</button></li>
+				<li><a href="QA.html">Q&A</a></li>
+				<li><a href="about.html">about us</a></li>
+				<li><a href="commodity.html">commodity</a></li>
+				<li><a href="../index.html"><img class="home" src="../assets/img/home.png"></a></li>
+			</ul>
+		</nav>
+		<div class="sidenav">
+			<a href="#mdata">會員資料</a>
+			<a href="#mem">訂單紀錄</a>
+			<a href="#like">我的最愛</a>
+			<a href="#cart">購物車</a>
+			<a href="#comm1">商品評分/評論</a>
+			<a href="#amount1">累積消費金額</a>
+			<a href="#book">立即下單</a>
+			<a href="../index.html">登出</a>
+		</div>
+		<section>
+			<div class="user" id="mdata">
+				<h2 class="t">會員資料</h2>
+				<p class="solid">帳號: <br>姓名: <br>E-mail:</p>
+			</div>
+			<div class="user" id="mem">
+				<h2 class="t">訂單紀錄</h2>
+				<p class="solid1"></p>
+			</div>
+			<div class="user" id="cart">
+				<h2 class="t">購物車</h2>
+				<div id="app">
+					<div class="container">
+						<div class="item_header">
+							<div class="item_detail">商品</div>
+							<div class="price">單價</div>
+							<div class="count">數量</div>
+							<div class="amount">總計</div>
+							<div class="operate">操作</div>
+						</div>
+						<div class="item_container" v-for="(item, index) in itemList" :key="item.id" >
+						<div class="item_header item_body">
+							<div class="item_detail">
+								<img src="../assets/img/tick1.jpg">
+								<div class="name">{{item.itemName}}</div>
+							</div>
+							<div class="price"><span>$</span>{{item.price}}</div>
+							<div class="count">
+								<button @click="handleSub(item)" class="n">-</button>
+								1
+								<button @click="handlePlus(item)" class="n">+</button>
+							</div>
+							<div class="amount">{{item.price * item.count}}</div>
+							<div class="operate">
+								<button class="but1">刪除</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="user1" id="comm1">
+				<h2 class="t">商品評分/評論</h2>
+				<p class="solid">尚無評分記錄 <br> </p>
+			</div>
+			<div class="user1" id="amount1">
+				<h2 class="t">累積消費金額</h2>
+				<p class="solid">累積消費金額: <br> </p>
+				<select class="opt">
+					<option value="volvo">250元 護唇膏</option>
+					<option value="saab">500元 葉黃素一盒</option>
+					<option value="opel">1000元 帽子</option>
+					<option value="audi">2000元 吹風機</option>
+					<option value="audi">3000元 藍芽耳機</option>
+					<option value="audi">4500元 球賽門票</option>
+				</select>
+				<button class="but">兌換</button>
+			</div>
+			<div class="user1" id="book">
+				<h2 class="t">立即下單</h2>
+				<div class="solid2">
+					<form>
+						姓名: <input type="text" name="Name" value="Mickey" ><br>
+						E-mail: <input type="text" name="E-mail" value="123@gmail.com" ><br>
+						地址: <input type="text" name="addr" ><br>
+						<p class="ta">付款方式:</p>
+						<select class="opt1">
+							<option value="a">ATM轉帳</option>
+							<option value="b"> 信用卡轉帳</option>
+							<option value="c">銀行匯款</option>
+						</select>
+						<button class="but">結帳</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<div id="id01" class="modal">
+			
+			<form class="modal-content animate" action="/action_page.php" method="post">
+				<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				</div>
+				<div class="container">
+					<label for="uname" class="te"><b>帳號：</b></label>
+					<input type="text" placeholder="Enter Username" name="uname" required>
+					<label for="psw"  class="te"><b>密碼：</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required>
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+					<p></p>
+					<center>			
+						<button type="submit" class="add">
+							會員登入
+						</button>
+						<button type="submit" class="add">
+							<a href="manager.html">管理員登入</a>
+						</button>
+					</center>
+				</div>
+				<div class="container">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">取消</button>
+					<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"class="cancelbtn" >註冊</button>
+					<span class="psw">Forgot <a href="#" class="color">password?</a></span>
+				</div>
+			</form>
+		</div>
+		<script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		if (event.target == modal) {
+		modal.style.display = "none";
+		}
+		}
+		</script>
+		
+		<div id="id02" class="modal1">
+			<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<form class="modal-content1" action="/action_page.php">
+				<div class="container1">
+					<h1 class="te">會員註冊</h1>
+					<hr>
+					<label for="name" class="te"><b>姓名</b></label>
+					<input type="text" placeholder="Enter Name" name="name" required>
+					<label for="account" class="te"><b>帳號</b></label>
+					<input type="text" placeholder="Enter account" name="account" required>
+					<label for="psw" class="te"><b>密碼</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required>
+					<label for="psw-repeat"class="te"> <b>再次輸入密碼</b></label>
+					<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+					<label for="email" class="te"><b>Email</b></label>
+					<input type="text" placeholder="Enter Email" name="email" required>
+					<label>
+						<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+					</label>
+					
+					<div class="clearfix1">
+						<button type="submit" class="signupbtn1">註冊</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script src="../assets/js/car.js"></script>
+	</body>
+</html>
