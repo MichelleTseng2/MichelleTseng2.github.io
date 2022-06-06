@@ -1,0 +1,149 @@
+*,p,h1,h2,h3,h4,h5{
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+}
+
+/*navbar*/
+.navbar-brand img{
+  width: 15rem;
+}
+.bg-dark{
+  opacity: 70%;
+}
+
+/*title font*/
+.title{
+  font-size: 2rem;
+  color: #7891AE;
+  position: absolute;
+  top: -25px;
+  left: 10px;
+  background: linear-gradient(to bottom, #D8D1C4 0%, #D8D1C4 50%, white 50%, white 100%); 
+}
+
+/*font color*/
+.font_bluegray{
+  color: #7891AE;
+}
+.font_brown{
+  color: #745E4D;
+}
+
+/*index tab*/
+#index .nav-link{
+  color: #745E4D;
+}
+#index .nav-link:focus,
+#index .nav-link:hover {
+  background-color: #F6F6F6;
+  color: #745E4D;
+}
+#index .nav-pills .nav-link.active,
+#index .nav-pills .show>.nav-link {
+  background-color: #745E4D;
+  color: white;
+}
+#index .tab-content{
+  background-color: white;
+}
+
+/*system a*/
+#system a{
+  color: #53667c;
+}
+#system .no{
+  text-decoration: none;
+}
+
+/*card*/
+.card{
+  background-color: #89939A;
+}
+.myself{
+  position: relative;
+}
+.self{
+  position: absolute;
+  bottom: 100%;
+  overflow: hidden;
+  height:0%;
+  transition: .5s ease;
+}
+.myself:hover .self{
+  bottom: 0%;
+  height: 100%; 
+}
+#member .table,#member td{
+  border: solid white 1px;
+}
+
+/*RWD*/
+@media screen and (min-width:1000px){ 
+  .game{
+    height:35rem;
+  }
+  .platform{
+    width: 50rem;
+  }
+  .card{
+    width: 18rem;
+  }
+  .card-img-top{
+    height: 18rem;
+  }
+  #member p{
+    line-height: 30px;
+  }
+  #index .origin{
+    background-image: url(../image/origin.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+  }
+  #index p{
+    line-height: 50px;
+  }
+  #system a{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:1000px){ 
+  .game{
+    height:25rem;
+  }
+  .platform{
+    width: 30rem;
+  }
+  .card{
+    width: 8rem;
+  }
+  .card-img-top{
+    height: 8rem;
+  }
+  #index .origin{
+    background-image: url(../image/origin.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+  }
+}
+@media screen and (max-width:500px){ 
+  .game{
+    height:15rem;
+  }
+  .platform{
+    width: 20rem;
+  }
+  .card{
+    width: 6rem;
+  }
+  .card-img-top{
+    height: 6rem;
+  }
+  #member p{
+    font-size: 12px;
+  }
+  #system a{
+    font-size: 12px;
+  }
+}
